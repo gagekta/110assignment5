@@ -1,0 +1,328 @@
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+        <style>
+            body {
+                background-color: white;
+                font-family: Source Sans Pro;
+                font-weight: bolder;
+            }
+            .header {
+                background-color: white;
+                width: 100%;
+                height: 100px;
+                position:fixed;
+                display: flex;
+                font-size: 22px;
+            }
+            .leftHeader {
+                width: 50%;
+                margin-left: 15%;
+            }
+            .rightHeader {
+                width: 50%;
+                margin-right: 30%;
+                text-align: right;
+                align-items: center;
+            }
+            .header img {
+                width: 70px;
+                border: 1px solid blue;
+                border-color: blue;
+                border-radius:100%;
+                background-color: blue;
+            }
+            .name {
+                display: flex;
+                margin-left: 10%;
+            }
+            .tabs {
+                display: flex;
+                justify-content: space-between;
+                font-size: smaller;
+                margin-right: 10%;
+                margin-top: 15px;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:link {
+                color: black;
+            }
+            a:visited {
+                color: black;
+            }
+            a:hover {
+                color: rgb(37, 37, 179);
+            }
+            .home {
+                background-image: linear-gradient(
+                rgba(14, 53, 182, 0.781), 
+                rgba(14, 53, 182, 0.781)
+                ),
+                 url(common-bg.svg);
+                width: 100%;
+                height:910px;
+                padding-top: 10px;
+            }
+            .homeContent {
+                margin-top: 400px;
+                text-align: center;
+                margin-right: 25%;
+                margin-left: 25%;
+                color: white;
+            }
+            .homeContent h1 {
+                font-size: 70px;
+            }
+            .homeContent P {
+                font-size: 22px;
+            }
+            .projectButton {
+                display: inline-block;
+                border: 1px solid white;
+                background-color: white;
+                font-size: 26px;
+                color: black;
+                padding: 10px 70px;
+                border-radius: 8px;
+            }
+            .projectButton:hover{
+                transform: translateY(-0.25em);
+            }
+            .about {
+                background-color: rgb(241, 241, 241);
+                width:100%;
+                height: 810px;
+                padding-top: 10px;
+            }
+            .aboutSec1 {
+                text-align: center;
+                margin: 0 25%;
+            }
+            .aboutSec1 h1 {
+                font-size: 40px;
+            }
+            .aboutSec1 p {
+                font-size: 18px;
+                color: rgb(158, 157, 156);
+            }
+            .aboutSec2 {
+                display: flex;
+                
+            }
+            .blueButton {
+                display: inline-block;
+                border: 1px solid white;
+                background-color: rgb(14, 53, 182, 0.781);
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                padding: 8px 40px;
+                border-radius: 8px;
+            }
+            .blueButton:hover {
+                transform: translateY(-0.25em);
+            }
+            .getTo {
+                width: 50%;
+                margin-left: 15%;
+                margin-right: 300px;
+            }
+            .getTo h2 {
+                font-size: 30px;
+            }
+            .getTo p {
+                color: rgb(158, 157, 156);
+                font-size: 18px;
+            }
+
+            .skills {
+                width: 50%;
+            }
+            .projects {
+                background-color: rgb(252, 252, 252);
+                width:100%;
+                height: 1500px;
+                padding-top: 10px;
+            }
+            .projSec1 {
+                text-align: center;
+                margin: 0 25%;
+            }
+            .projSec1 h1 {
+                font-size: 40px;
+            }
+            .projSec1 p {
+                font-size: 18px;
+                color: rgb(158, 157, 156);
+            }
+            .proj1 {
+                display: flex;
+            }
+            .proj2 {
+                display: flex;
+            }
+            .proj3 {
+                display: flex;
+            }
+            .image1 {
+                margin-left: 20%;
+            }
+            .image1 img {
+                width: 700px;
+            }
+            .proj1Desc {
+                width: 30%;
+                margin-top: 70px;
+            }
+            .proj1Desc h1 {
+                font-size: 30px;
+            }
+            .proj1Desc p {
+                font-size: 18px;
+                color: rgb(158, 157, 156);
+            }
+            .contact {
+                background-image: linear-gradient(
+                rgba(14, 53, 182, 0.781), 
+                rgba(14, 53, 182, 0.781)
+                ),
+                 url(common-bg.svg);
+                width: 100%;
+                height: 1000px;
+                padding-top: 10px;
+            }
+            .contactSec1 {
+                text-align: center;
+                margin: 0 25%;
+                color: white;
+            }
+            .contactSec1 h1 {
+                font-size: 40px;
+            }
+            .contactSec1 p {
+                font-size: 18px;
+            }
+            .footer {
+                background-color: black;
+                width: 100%;
+                height: 250px;
+                padding-top: 10px;
+                display: flex;
+                color: white;
+            }
+            .footer h1 {
+                font-size: 20px;
+                margin-top: 100px;
+            }
+            .footer p {
+                font-size: 14px;
+            }
+            .footerSec1 {
+                width: 50%;
+                margin-left: 15%;
+            }
+            .footerSec2 {
+                width: 50%;
+                margin-left: 30%;
+            }
+            .copyright {
+                width: 100%;
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-size: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="rightHeader">
+                <div class="name"><img src="john-doe.png"><p>John Doe</p></div>
+            </div>
+            <div class="leftHeader">
+                <div class="tabs">
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#projects">PROJECTS</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="home" id="home">
+            <div class="homeContent">
+               <h1>HEY, MY NAME IS JOHN DOE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente solutions for complex problems</p>
+                <div class="projectButton">Projects</div> 
+            </div>
+            
+        </div>
+        <div class="about" id="about">
+            <div class="aboutSec1">
+                <h1>ABOUT ME</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente </p>
+            </div>
+            <div class="aboutSec2">
+                <div class="getTo">
+                    <h2>Get to know me!</h2>
+                    <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. </p>
+                    <p>I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Feel free to contact me here. </p>
+                    <div class="blueButton">Contact</div>
+                </div>
+                <div class="skills">
+                    <h2>My Skills</h2>
+                </div>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <div class="projSec1">
+                <h1>Projects</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente</p>
+            </div>
+            <div class="proj1">
+                <div class="image1"><img src="project-mockup-example.jpeg"></div>
+                <div class="proj1Desc">
+                    <h1>Project 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium. </p>
+                    <div class="blueButton">Case Study</div>
+                </div>
+            </div>
+            <div class="proj2">
+                <div class="image1"><img src="project-mockup-example.jpeg"></div>
+                <div class="proj1Desc">
+                    <h1>Project 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium. </p>
+                    <div class="blueButton">Case Study</div>
+                </div>
+            </div>
+            <div class="proj3">
+                <div class="image1"><img src="project-mockup-example.jpeg"></div>
+                <div class="proj1Desc">
+                    <h1>Project 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium. </p>
+                    <div class="blueButton">Case Study</div>
+                </div>   
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="contactSec1">
+                <h1>CONTACT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente </p>
+            </div>
+            <div class="contactBox">
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerSec1">
+                <h1>JOHN DOE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit facilis tempora explicabo quae quod deserunt </p>
+            </div>
+            <div class="footerSec2">
+                <h1>SOCIAL</h1>
+            </div>
+        </div>
+        <div class="copyright">© Copyright 2021. Made by Gage Cooper</div>
+    </body>
+</html>
